@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="pl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title> Przykład użycia pętli </title>
+<script language="JavaScript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+
+
+for ( var i=4; i<=19; i++)
+{
+var w = Math.sqrt(i);
+var y = Math.sqrt(Math.sqrt(i));
+document.write("i="+i+"&nbsp pierw_2("+i+")="+w.toFixed(2)+"&nbsp pierw_4("+i+")="+y.toFixed(2)+"<br>");
+}
+</script></head><body>i=4&nbsp; pierw_2(4)=2.00&nbsp; pierw_4(4)=1.41<br>i=5&nbsp; pierw_2(5)=2.24&nbsp; pierw_4(5)=1.50<br>i=6&nbsp; pierw_2(6)=2.45&nbsp; pierw_4(6)=1.57<br>i=7&nbsp; pierw_2(7)=2.65&nbsp; pierw_4(7)=1.63<br>i=8&nbsp; pierw_2(8)=2.83&nbsp; pierw_4(8)=1.68<br>i=9&nbsp; pierw_2(9)=3.00&nbsp; pierw_4(9)=1.73<br>i=10&nbsp; pierw_2(10)=3.16&nbsp; pierw_4(10)=1.78<br>i=11&nbsp; pierw_2(11)=3.32&nbsp; pierw_4(11)=1.82<br>i=12&nbsp; pierw_2(12)=3.46&nbsp; pierw_4(12)=1.86<br>i=13&nbsp; pierw_2(13)=3.61&nbsp; pierw_4(13)=1.90<br>i=14&nbsp; pierw_2(14)=3.74&nbsp; pierw_4(14)=1.93<br>i=15&nbsp; pierw_2(15)=3.87&nbsp; pierw_4(15)=1.97<br>i=16&nbsp; pierw_2(16)=4.00&nbsp; pierw_4(16)=2.00<br>i=17&nbsp; pierw_2(17)=4.12&nbsp; pierw_4(17)=2.03<br>i=18&nbsp; pierw_2(18)=4.24&nbsp; pierw_4(18)=2.06<br>i=19&nbsp; pierw_2(19)=4.36&nbsp; pierw_4(19)=2.09<br>
+
+
+<input type="button" value="zamknij okno" onclick="okno_zamknij()">
+
+</body></html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="pl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title> Przykład użycia pętli </title>
+<script language="JavaScript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+var l1_t_but=prompt("Podaj liczbę 1 =","");
+var a=parseFloat(l1_t_but);
+var l2_t_but=prompt("Podaj liczbę 2 =","");
+var b=parseFloat(l2_t_but);
+var po=prompt("Podaj początkową wartość","");
+var pocz_but=parseFloat(po);
+var tekst_but=prompt("Podaj tekst","");
+var i = pocz_but;
+
+if ((a>60) || (a<20) || (b>60) || (b<60)){
+document.write("Nie ma takich liczb w zbiorze");
+}
+else if (a>b)
+{
+for ( var j=1; j<=pocz_but; j++)
+{
+if (i>0)
+{
+document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_but+"<br></p>");
+i = i - 5;
+}
+}
+}
+else if (b>a)
+{
+for ( var j=1; j<=pocz_but; j++)
+{
+if (i<0)
+{
+document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_but+"<br></p>");
+i = i + 5;
+}
+}
+}
+</script>
+</head>
+<body>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()">
+
+</body></html>

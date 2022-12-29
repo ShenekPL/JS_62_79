@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<style>
+		.text {
+		resize: none;
+		}
+		 </style>
+		<script type="text/javascript">
+		 function okno_zamknij() 
+		 {
+		 window.close()
+		 }
+		</script>
+	</head>
+	<body>
+		 <textarea class="text" name="wyjaśnienie" cols="100" rows="30" disabled>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script language="JavaScript">
+			var w = i * i + i + 41;
+			for ( var i=0; i<=39; i++)
+			{
+			if (i%5==0)
+			{
+			document.write("--------------<br>");
+			}
+			var w = i * i + i + 41;
+			document.write("i="+i+"&nbsp w("+i+")="+w+"<br>");
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
+		 </textarea><br>
+		 <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+	</body>
+</html>

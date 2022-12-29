@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<style>
+		.text {
+		resize: none;
+		}
+		 </style>
+		<script type="text/javascript">
+		 function okno_zamknij() 
+		 {
+		 window.close()
+		 }
+		</script>
+	</head>
+	<body>
+		 <textarea class="text" name="wyjaśnienie" cols="100" rows="30" disabled>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script language="JavaScript">
+			var l1_t_fre=prompt("Podaj liczbę 1: ","");
+			var a=parseFloat(l1_t_fre);
+			var l2_t_fre=prompt("Podaj liczbę 2: ","");
+			var b=parseFloat(l2_t_fre);
+			var pw=prompt("Podaj początkową wartość: ","");
+			var pocz_fre=parseFloat(pw);
+			var tekst_fre=prompt("Podaj tekst: ","");
+			var i = pocz_fre;
+
+			if ((a>60) || (a<20) || (b>60) || (b<60)){
+			document.write("Nie ma takich liczb w zbiorze");
+			}
+			else if (a>b)
+			{
+			for ( var j=1; j<=pocz_fre; j++)
+			{
+			if (i>0)
+			{
+			document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_fre+"<br></p>");
+			i = i - 5;
+			}
+			}
+			}
+			else if (b>a)
+			{
+			for ( var j=1; j<=pocz_fre; j++)
+			{
+			if (i<0)
+			{
+			document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_fre+"<br></p>");
+			i = i + 5;
+			}
+			}
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
+		 </textarea><br>
+		 <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+	</body>
+</html>

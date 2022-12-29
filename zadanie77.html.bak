@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="pl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title> Przykład użycia pętli </title>
+<script language="JavaScript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+var l1_t_but=prompt("Podaj liczbę","");
+var a=parseFloat(l1_t_but);
+
+for ( var i=2; i<=a; i++)
+{
+if (i%2==0)
+{
+document.write(i+"<br>");
+}
+}
+</script>
+</head>
+<body>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()">
+
+</body></html>

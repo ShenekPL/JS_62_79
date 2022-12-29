@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="pl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title> Przykład użycia pętli </title>
+<script language="JavaScript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+var w = i * i + i + 41;
+
+
+for ( var i=0; i<=39; i++)
+{
+if (i%5==0)
+{
+document.write("--------------<br>");
+}
+var w = i * i + i + 41;
+document.write("i="+i+"&nbsp w("+i+")="+w+"<br>");
+}
+</script></head><body>--------------<br>i=0&nbsp; w(0)=41<br>i=1&nbsp; w(1)=43<br>i=2&nbsp; w(2)=47<br>i=3&nbsp; w(3)=53<br>i=4&nbsp; w(4)=61<br>--------------<br>i=5&nbsp; w(5)=71<br>i=6&nbsp; w(6)=83<br>i=7&nbsp; w(7)=97<br>i=8&nbsp; w(8)=113<br>i=9&nbsp; w(9)=131<br>--------------<br>i=10&nbsp; w(10)=151<br>i=11&nbsp; w(11)=173<br>i=12&nbsp; w(12)=197<br>i=13&nbsp; w(13)=223<br>i=14&nbsp; w(14)=251<br>--------------<br>i=15&nbsp; w(15)=281<br>i=16&nbsp; w(16)=313<br>i=17&nbsp; w(17)=347<br>i=18&nbsp; w(18)=383<br>i=19&nbsp; w(19)=421<br>--------------<br>i=20&nbsp; w(20)=461<br>i=21&nbsp; w(21)=503<br>i=22&nbsp; w(22)=547<br>i=23&nbsp; w(23)=593<br>i=24&nbsp; w(24)=641<br>--------------<br>i=25&nbsp; w(25)=691<br>i=26&nbsp; w(26)=743<br>i=27&nbsp; w(27)=797<br>i=28&nbsp; w(28)=853<br>i=29&nbsp; w(29)=911<br>--------------<br>i=30&nbsp; w(30)=971<br>i=31&nbsp; w(31)=1033<br>i=32&nbsp; w(32)=1097<br>i=33&nbsp; w(33)=1163<br>i=34&nbsp; w(34)=1231<br>--------------<br>i=35&nbsp; w(35)=1301<br>i=36&nbsp; w(36)=1373<br>i=37&nbsp; w(37)=1447<br>i=38&nbsp; w(38)=1523<br>i=39&nbsp; w(39)=1601<br>
+
+
+<input type="button" value="zamknij okno" onclick="okno_zamknij()">
+
+</body></html>

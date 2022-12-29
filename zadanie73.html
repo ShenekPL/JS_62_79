@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<script language="JavaScript">
+		var i_fre=prompt("Podaj imię =","");
+		var n_fre=prompt("Podaj nazwisko =","");
+		var d_fre = (i_fre.length%4)+5;
+		var e_fre = (n_fre.length%6)+20;
+		var c_fre = "*";
+		for ( var i=1; i<=d_fre; i++)
+		{
+		document.write("*");
+		}
+		document.write("<br>");
+		for ( var i=1; i<=(d_fre-2); i++)
+		{
+		c_fre=c_fre+"&nbsp&nbsp";
+		}
+		for ( var i=1; i<=e_fre; i++)
+		{
+		document.write(c_fre+"*<br>");
+		}
+		for ( var i=1; i<=d_fre; i++)
+		{
+		document.write("*");
+		}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
